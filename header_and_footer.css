@@ -1,0 +1,80 @@
+/* ----------------------  Header --------------------------- */
+
+#header-container {
+    font-family: 'Baloo 2', sans-serif;
+    background-color: #FDF7ED;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1em;
+    width: 100%;
+}
+
+#menu-left, #menu-right {
+    display: flex;
+    justify-content: space-evenly;
+    flex: 1;
+    gap: 15px;
+
+}
+#menu-left {
+    padding-left: 10px;
+}
+
+#menu-right {
+    padding-right: 10px;
+    
+}
+
+#menu-left a, #menu-right a {
+    text-decoration: none;
+    color: #b7575a;
+    font-weight: bold;
+    font-size: 1.2em;
+    position: relative; /* Necessário para a linha embaixo */
+    transition: color 0.3s ease, transform 0.3s ease; /* Transição suave */
+
+}
+
+#menu-left a:hover, #menu-right a:hover {
+    color: #241920; /* Nova cor quando o usuário passa o rato */
+    transform: translateY(2px); /* Pequeno efeito de deslocamento */
+}
+
+/* Linha embaixo do texto no hover */
+#menu-left a:hover::after, #menu-right a:hover::after {
+    content: "";
+    position: absolute;
+    bottom: -5px; /* Distância da linha em relação ao texto */
+    left: 0; /* Linha começa mm debaixo do texto */
+    width: 100%;
+    height: 2px;
+    background-color: #b7575a; 
+}
+
+.logo {
+    width: 200px;
+    display: block;
+}
+
+
+/* ---------------------- Footer ---------------------------------- */
+#footer {
+    font-family: 'Baloo 2', sans-serif;
+    text-align: center;
+}
+
+#footer-info{
+    background-color: #b7575a;
+    padding: 1em;
+    color:#FDF7ED;
+}
+
+#footer-contact{
+    font-size: 1.2em;
+}
+
+#footer-bottom{
+    font-size: 0.8em;
+}
+

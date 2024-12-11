@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+  <title>Hotel Canino Incrivel</title>
+  <meta charset="UTF-8">
+  <link href="projeto_estilo.css" rel="stylesheet">
+  <link href="style.css" rel="stylesheet">
+  <link href="layout.css" rel="stylesheet">
+  <link href="responsive.css" rel="stylesheet">
+  <link href="header_and_footer.css" rel="stylesheet">
+  <link href="forms.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@400;700&display=swap" rel="stylesheet">
+  <link href="reserva.css" rel="stylesheet">
+</head>
+
+<body>
+  <header>
+    <div id="header-container">
+      <!-- menu da esquerda -->
+      <nav id="menu-left">
+        <a href="projeto.html">A equipa</a>
+        <a href="precario.html">Preçário</a>
+        <a href="servicos_add.html">Serviços Adicionais</a>
+      </nav>
+
+      <!-- Logo centralizado -->
+      <a href="projeto.html">
+        <img src="logo.png" alt="Logo do Hotel Canino - Patas de Pijama" class="logo">
+      </a>
+
+      <!-- Menu à direita -->
+      <nav id="menu-right">
+        <a href="reservar.html">Reservar</a>
+        <a href="projeto_register.html">Registar</a>
+        <a href="projeto_login.html">Log In</a>
+      </nav>
+    </div>
+  </header>
+  <main>
+    <h2>Reserve agora a estadia perfeita para o seu cão!</h2>
+    <p id="mess">Garanta o lugar do seu melhor amigo no nosso hotel canino, onde o conforto, segurança e diversão são a
+      nossa prioridade. Preencha os campos abaixo e deixe o resto connosco — cuidaremos de tudo para que o seu pet tenha
+      uma experiência incrível!</p>
+    <br>
+
+    <form id="dados">
+      <fieldset id="pessoais">
+        <legend><strong>Dados Pessoais</strong> </legend>
+        <input class="name" type="text" name="owner name" placeholder="Nome" required="required">
+        <input class="small_side" type="tel" name="owner phone" placeholder="Nº Telemóvel" required="required">
+        <input id="email" type="email" name="owner email" placeholder="Email" required="required">
+        <input id="address" type="text" name="owner adress" placeholder="Morada" required="required">
+      </fieldset>
+
+      <fieldset id="animal">
+        <legend><strong>Dados do Animal</strong> </legend>
+        <input id="dog_name" type="text" name="dog name" placeholder="Nome" required="required">
+        <input class="an_feat" type="number" name="dog name" placeholder="Idade" min="0" required="required"></label>
+        <label id="size">
+          Porte:
+          <select class="an_feat" name="size">
+            <option value="big">Grande</option>
+            <option value="medium">Médio</option>
+            <option value="small">Pequeno</option>
+          </select>
+        </label>
+      </fieldset>
+
+      <fieldset id="reserva">
+        <legend><strong>Dados de Reserva</strong> </legend>
+        <div class="data">
+          <label><em><b>Data de Entrada:</b></em> <input type="date" name="check_in" min="2024-12-15"></label>
+          <label> Data de Saída: <input type="date" name="check out" min="2024-12-16"></label>
+        </div>
+        <div class="xservices">
+          <label>Serviços Adicionais</label><br>
+          <div class="service-container">
+            <div class="checkbox">
+              <div class="box_lab">
+                <input type="checkbox" name="serviço" value="banho"> Banho
+              </div>
+              <div class="range-container">
+                <small>Quantidade:</small>
+                <input type="range" id="banhoRange" min="1" max="10" value="1">
+              </div>
+            </div>
+            <div class="checkbox">
+              <div class="box_lab">
+                <input type="checkbox" name="serviço" value="passeio"> Passeio
+              </div>
+              <div class="range-container">
+                <small>Quantidade:</small>
+                <input type="range" id="passeioRange" min="1" max="10" value="1">
+              </div>
+            </div>
+            <div class="checkbox">
+              <div class="box_lab">
+                <input type="checkbox" name="serviço" value="treino"> Treino
+              </div>
+              <div class="range-container">
+                <small>Quantidade:</small>
+                <input type="range" id="treinoRange" min="1" max="10" value="1">
+              </div>
+            </div>
+          </div>
+        </div>
+          <input id="xinfo" type="text" name="indicações" placeholder="Indique informações adicionais pertinentes">
+        
+      </fieldset>
+
+      <button formaction="confirmar_reserva.php" formmethod="post">Confirmar Reserva</button>
+
+
+    </form> 
+    
+    <!-------------------------------------------------------------- FOOTER ------------------------------------------------------>
+
+    <footer id="footer">
+    <!-- MAPA GOOGLE -->
+    <div id="footer-map">
+      <h1>Encontre-nos aqui!</h1>
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3002.991239843887!2d-8.59842032402499!3d41.17835827132716!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd246446d48922a3%3A0x8b1e4a0bcdacc840!2sFEUP%20-%20Faculdade%20de%20Engenharia%20da%20Universidade%20do%20Porto!5e0!3m2!1spt-PT!2spt!4v1733071423915!5m2!1spt-PT!2spt"
+        width=100% height=400px> </iframe>
+    </div>
+
+    <div id="footer-info">
+      <!-- Seção de Contato -->
+      <div id="footer-contact">
+        <p><strong> Endereço: </strong> Rua Doutor Roberto Frias, 123, Porto, Portugal</p>
+        <p><strong> Email: </strong>contato@patasdepijama.com </p>
+        <p><strong> Telefone: </strong> +351 911 234 567</p>
+      </div>
+      <!-- Copyright -->
+      <div id="footer-bottom">
+        <p>&copy; 2024 Patas de Pijama. Todos os direitos reservados.</p>
+      </div>
+
+    </div>
+
+
+
+  </footer>
+  
+  </main>
+ 
+
+</body>
+
+</html>

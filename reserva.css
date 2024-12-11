@@ -1,0 +1,189 @@
+main {
+    font-family: 'Baloo 2';
+    padding: 1em;   
+}
+
+main > h2{
+    color:#E3CAAE;
+    font-size: 2rem;
+    padding-top: 40px;
+    padding-bottom: 0px;
+    margin-bottom:0px;
+    text-align: center;
+}
+
+main> #mess{
+    margin-top: 2px;
+    text-align: justify;
+    text-indent: 21px;
+}
+
+main> #dados{
+    background-color: #FDF7ED;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#dados legend{
+    text-align: center;
+    font-weight: bold;
+    color: #B7575A;
+    font-size: 1.2em;
+} 
+#dados fieldset {
+    border: 1px solid #B7575A;
+    padding: 15px;
+    margin: 25px 5%;
+    border-radius: 5px;
+  }
+
+  /*Dados pessoais*/
+#pessoais{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 35px;
+    flex-direction: row;
+    justify-content: space-between;
+}   
+
+#pessoais input{
+    border: none;
+    border-radius: 50px;
+    text-align: center;
+    font-style: italic;
+}
+
+.name{
+    padding: 3px 350px;
+}
+.small_side{
+    padding: 3px 80px;
+}
+#email{
+    padding: 3px 220px;
+}
+#address{
+    padding: 3px 220px;
+}
+
+/*Dados Animal*/
+#animal{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 35px;
+}   
+
+#animal input{
+    border: none;
+    border-radius: 50px;
+    text-align: center;
+    font-style: italic;
+}
+#dog_name{
+    padding: 3px 180px;
+}
+.an_feat{
+    padding: 3px 70px;
+}
+#animal select{
+    border: none;
+    border-radius: 50px;
+    text-align: center;
+    font-style: italic;
+}
+
+#animal label{
+    color: #B7575A; 
+    display: flex;
+    gap: 20px;
+    font-weight: bold;
+    font-style: italic;
+}
+
+/*Dados da Reserva*/
+.data{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    color: #B7575A;
+    font-weight: bold;
+    font-style: italic;
+    margin-bottom: 30px ;
+    gap: 300px;
+    justify-content: center;
+}
+
+.data input{
+    margin-left: 20px;
+    padding: 2px 30px;
+    border-radius: 15px;
+    border-style: none;
+    color: grey;
+}   
+
+.xservices {
+    text-align: center;
+}
+  
+.service-container {
+    display: flex;
+    justify-content:space-evenly;
+    margin-top: 30px;
+    margin-bottom: 30px;
+
+}
+  
+.checkbox {
+    margin-bottom: 10px;
+}
+  
+.range-container {
+    display: flex;
+    gap: 3px;
+    font-style: italic;
+    color: #B7575A;
+}
+.xservices label{
+    color: #B7575A;
+    text-decoration: underline;
+    font-weight: bold;
+    font-style: italic;
+}
+
+.box_lab{
+    font-weight: bold;
+    color: #B7575A;
+    display: flex;
+    justify-content: center;
+}
+
+#xinfo{
+    border: none;
+    border-radius: 50px;
+    text-align: center;
+    font-style: italic;
+    display: block; 
+    margin: 50px auto 15px auto; 
+    width: 80%; 
+    padding: 10px 15px;
+}
+
+
+
+#dados button {
+    background-color: #B7575A; 
+    color: #FDF7ED;
+    text-align: center;
+    white-space: nowrap;
+    font-weight: bold;
+    font-size: 1em;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    padding-top:10px;
+    padding-bottom: 10px;
+    margin: 70px 15% 40px 15%;
+}
